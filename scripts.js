@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const showMessage = (text, type) => {
     messageDiv.textContent = text;
-    messageDiv.className = message ${type};
+    messageDiv.className = 'message ${type}';
   };
 
   // form submission event listener
