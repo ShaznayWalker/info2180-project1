@@ -142,3 +142,82 @@ header nav a:focus{
   color:#4b5563;
   line-height:1.4;
 }
+
+/* ---------- COVID TESTING ---------- */
+
+.testing{
+  background: var(--covid-bg); /* given in instructions */
+  color: white; /* given in instructions */
+  padding:28px 0;
+  margin-top:28px;
+}
+.testing .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.testing-desciption { 
+  flex:1;
+}
+.testing-desciption h2{
+  margin:0 0 8px;
+  font-size:20px;
+  color:white;
+}
+.testing-desciption p{
+  margin:0;
+  color: #e6eef6;
+  max-width:720px;
+}
+.cta {
+  flex:0 0 auto;
+}
+.cta .btn{
+  display:inline-block;
+  padding:12px 18px;
+  background: var(--accent-green); /* given in instructions */
+  color: white;
+  border-radius:5px; /* given in instructions */
+  text-decoration:none;
+  font-weight:600;
+}
+
+
+/* ---------- RECENT STORIES ---------- */
+
+.stories{
+  padding:36px 0;
+}
+.stories h2{
+  color: var(--accent-indigo); /* given in instructions */
+  margin:0 0 18px;
+  font-size:24px;
+}
+.stories article{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  margin-bottom:20px;
+}
+.stories article img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:50%; /* required circular images */
+  display:block;
+}
+.article-body h3{
+  margin:0 0 8px;
+  font-size:18px; /* given in instructions */
+}
+.article-body p{
+  margin:0 0 12px;
+  color:#374151;
+  line-height:1.45;
+}
+.article-body a{
+  color: var(--accent-indigo); /* given in instructions */
+  text-decoration:none;
+  font-weight:600;
+}
