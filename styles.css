@@ -27,3 +27,118 @@ body{
   width:100%;
   padding:20px;
 }
+
+/* ---------- HEADER ---------- */
+
+header{
+  background: #fff; /* given in instructions */
+  border-bottom: 1px solid #e6e9ef;
+}
+header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+}
+header h1{
+  margin:0;
+  font-size:18px; /* given in instructions */
+  font-weight:600;
+}
+header nav ul{
+  list-style:none;
+  display:flex;
+  gap:18px;
+  margin:0;
+  padding:0;
+  align-items:center;
+}
+header nav a{
+  text-decoration:none;
+  color: var(--muted-gray); /* given in instructions */
+  font-size:18px; /* given in instructions */
+  transition: color .15s ease;
+}
+header nav a:hover,
+header nav a:focus{
+  color: var(--accent-indigo); /* given in instructions */
+}
+
+
+/* ---------- HERO / OVERVIEW ---------- */
+
+.overview-hero{
+  background: var(--light-gray); /* given in instructions */
+  padding:36px 0;
+}
+.overview-hero .container{
+  display:flex;
+  gap:28px;
+  align-items:center;
+}
+.overview-hero-image{
+  flex:0 0 260px;
+  max-width:260px;
+}
+.overview-hero-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:6px;
+}
+.overview-hero-text{
+  flex:1 1 auto;
+}
+.overview-hero-text h2{
+  margin:0 0 12px 0;
+  font-size:28px;
+}
+.overview-hero-text p{
+  margin:0;
+  line-height:1.5;
+  color:#374151;
+}
+
+
+/* ---------- LEARN ABOUT ---------- */
+
+.learn-about{
+  padding:36px 0;
+}
+.learn-about h2{
+  font-size:24px; /* given in instructions */
+  color: var(--accent-green); /* given in instructions */
+  margin:0 0 18px;
+}
+.cards{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /*given in instructions 3 columns */
+  gap:18px;
+}
+.card{
+  background:#fff;
+  border:1px solid var(--light-gray); /* color given in instructions */
+  border-radius: var(--card-radius); /* given in instructions */
+  padding:16px;
+  box-shadow: 0 2px 6px rgba(16,24,40,0.06); /* slight shadow */
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:4px;
+}
+.card-body h3{
+  margin:0;
+  font-size:21px; /* given in instructions */
+  color: var(--accent-green); /* given in instructions */
+}
+.card-body p{
+  margin:0;
+  color:#4b5563;
+  line-height:1.4;
+}
