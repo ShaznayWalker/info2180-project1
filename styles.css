@@ -221,3 +221,75 @@ header nav a:focus{
   text-decoration:none;
   font-weight:600;
 }
+
+/* ---------- NEWSLETTER ---------- */
+
+.newsletter{
+  background: var(--newsletter-bg); /* given in instructions */
+  color:white; /* given in instructions */
+  padding:36px 0;
+  text-align:center; /* given in instructions */
+}
+.newsletter h3, .newsletter p{
+  margin:0;
+}
+.newsletter form{
+  margin-top:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.newsletter .form-group input[type="email"],
+.newsletter input[type="email"]{
+  padding:12px 14px;
+  border:none;
+  border-radius:4px;
+  width:320px;
+  max-width:60%;
+  outline:none;
+}
+.newsletter .btn{
+  padding:12px 16px;
+  border:none;
+  border-radius:4px;
+  background: var(--accent-indigo); /* given in instructions */
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+.message{
+  margin-top:14px;
+  font-size:15px;
+}
+.message.success{ color: #E6FFEF; } /* success tone on green */
+.message.error{ color: #FFECEF; }   /* error tone */
+
+
+/* ---------- FOOTER ---------- */
+
+footer{
+  background: var(--footer-bg); /* given in instructions */
+  color:white; /* given in instructions */
+  padding:18px 0;
+  text-align:center;
+  margin-top:0;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px){
+  .cards{ grid-template-columns: repeat(2, 1fr); }
+  .overview-hero .container{ flex-direction:column; text-align:center; }
+  .testing .container{ flex-direction:column; text-align:center; gap:16px; }
+  .stories article{ flex-direction:column; align-items:center; text-align:center; }
+}
+@media (max-width: 600px){
+  .cards{ grid-template-columns: 1fr; }
+  header nav ul{ gap:12px; font-size:16px; }
+  .overview-hero-image{ max-width:320px; width:100%; margin:0 auto; }
+  .newsletter .form-group input[type="email"], .newsletter input[type="email"]{ width:100%; max-width:100%; }
+  .newsletter form{ flex-direction:column; }
+}
